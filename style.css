@@ -1,0 +1,47 @@
+body {
+    background: black;
+    color: #00ff88;
+    font-family: Arial;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background: #111;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 10px;
+}
+
+.hero {
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+button {
+    background: black;
+    color: #00ff88;
+    border: 1px solid #00ff88;
+    padding: 10px 20px;
+}
+
+section {
+    padding: 40px;
+}
+
+.card {
+    border: 1px solid #00ff88;
+    padding: 20px;
+    margin: 10px;
+}
