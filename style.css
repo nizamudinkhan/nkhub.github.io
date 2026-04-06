@@ -1,17 +1,21 @@
 body {
-    background: black;
+    background: radial-gradient(circle at top, #0f2027, #000000);
     color: #00ff88;
     font-family: Arial;
     margin: 0;
 }
 
+/* Navbar */
 nav {
     display: flex;
     justify-content: space-between;
     padding: 15px;
-    background: #111;
     position: sticky;
     top: 0;
+
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0,255,136,0.3);
 }
 
 nav ul {
@@ -28,26 +32,35 @@ nav ul li a {
     text-decoration: none;
 }
 
+/* Hero */
 .hero {
     height: 90vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-}
-
-button {
-    background: black;
-    color: #00ff88;
-    border: 1px solid #00ff88;
-    padding: 10px 20px;
-}
-
-section {
-    padding: 60px;
     text-align: center;
 }
 
+.profile {
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    border: 3px solid #00ff88;
+    box-shadow: 0 0 20px #00ff88, 0 0 40px #00ff88;
+    margin-bottom: 20px;
+}
+/* Sections */
+section {
+    padding: 60px;
+    text-align: center;
+    margin: 40px;
+    border-radius: 20px;
+
+    background: rgba(255,255,255,0.03);
+    backdrop-filter: blur(6px);
+}
+
+/* Skill bars */
 .bar {
     width: 60%;
     margin: auto;
@@ -64,14 +77,41 @@ section {
 .js { width: 70%; }
 .python { width: 75%; }
 
+/* Cards */
 .card {
-    border: 1px solid #00ff88;
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(0,255,136,0.3);
     padding: 20px;
     margin: 10px;
     display: inline-block;
-    width: 200px;
+    width: 220px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    transition: 0.3s;
 }
 
+.card:hover {
+    box-shadow: 0 0 20px #00ff88;
+    transform: translateY(-5px);
+}
+
+/* Button */
+button {
+    background: rgba(255,255,255,0.05);
+    color: #00ff88;
+    border: 1px solid rgba(0,255,136,0.5);
+    padding: 12px 25px;
+    border-radius: 10px;
+    backdrop-filter: blur(8px);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    box-shadow: 0 0 15px #00ff88;
+    transform: scale(1.05);
+}
+/* Footer */
 footer {
     background: #111;
     padding: 20px;

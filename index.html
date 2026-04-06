@@ -1,35 +1,48 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>NK HUB Portfolio</title>
+    <title>NK HUB </title>
     <link rel="stylesheet" href="style.css">
+    <meta name="description" content="Nizamuddin Khan Web Developer, Video Editor, Graphic Designer Portfolio">
+    <meta name="keywords" content="Nizamuddin Khan, Web Developer, Video Editor, Graphic Designer, Portfolio">
+    <meta name="author" content="Nizamuddin Khan">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
 
+<!-- Navbar -->
 <nav>
     <h2>NK HUB</h2>
     <ul>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#skills">Skills</a></li>
+        <li><a href="#services">Services</a></li>
         <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
     </ul>
 </nav>
 
+<!-- Hero Section -->
 <section id="home" class="hero">
-    <h1>Nizamuddin Khan</h1>
-    <h3>Web Developer | Video Editor | Graphic Designer</h3>
-    <button>Download Resume</button>
+    <div class="hero-content">
+        <img src="images/profile.jpg" class="profile">
+        <h1>Nizamuddin Khan</h1>
+        <h3>I am a <span class="typing"></span></h3>
+        <a href="resume.pdf"><button>Download Resume</button></a>
+    </div>
 </section>
 
+<!-- About -->
 <section id="about">
     <h2>About Me</h2>
-    <p>I am a Web Developer, Video Editor and Graphic Designer. I create websites, edit professional videos and design creative graphics.</p>
+    <p>I am a Web Developer, Video Editor and Graphic Designer. I create websites, edit videos and design graphics.</p>
 </section>
 
+<!-- Skills -->
 <section id="skills">
     <h2>My Skills</h2>
+
     <p>HTML</p>
     <div class="bar"><div class="html"></div></div>
 
@@ -43,6 +56,15 @@
     <div class="bar"><div class="python"></div></div>
 </section>
 
+<!-- Services -->
+<section id="services">
+    <h2>Services</h2>
+    <div class="card">Web Development</div>
+    <div class="card">Video Editing</div>
+    <div class="card">Graphic Designing</div>
+</section>
+
+<!-- Projects -->
 <section id="projects">
     <h2>Projects</h2>
     <div class="card">Airline Management System</div>
@@ -51,6 +73,7 @@
     <div class="card">Portfolio Website</div>
 </section>
 
+<!-- Contact -->
 <section id="contact">
     <h2>Contact Me</h2>
     <p>Email: Nizamudinkhan@gmail.com</p>
@@ -61,6 +84,9 @@
 <footer>
     <p>© 2026 NK HUB Portfolio</p>
 </footer>
+
+<script src="script.js"></script>
+
 
 </body>
 </html>
